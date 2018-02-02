@@ -1,0 +1,20 @@
+/* mat-form-field{
+    color: red;
+}
+
+.formwidth{
+    width: auto;
+}*/
+
+.fullwidth{
+    width: 100%;
+}
+
+#button-sugerencias{
+    /* flex: auto; */
+    font-family: dosis;
+    position: relative;
+    float: right;
+    width: 100%;
+
+}

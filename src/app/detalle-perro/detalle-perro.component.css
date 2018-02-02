@@ -1,0 +1,52 @@
+#button{
+    position: relative;
+}
+
+.header-detalle-perro{
+    text-transform: uppercase;
+    font-family: dosis-bold;
+    color: #3f548e;
+    font-size: 30px;
+}
+
+
+td{
+    color: #3f548e;
+    font-family: dosis;
+
+}
+
+.table-reponsive{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    /* max-height: 500px;
+    max-width: 100%;
+    min-height: auto;
+    min-width: auto; */
+
+}
+
+mat-card-content{
+    width: 100%;
+}
+
+.table{
+    width: 100%;
+}
+tbody{
+    width: 100%;
+}
+
+.carousel-control.right, .left{
+    color: #333;
+    width: 20%;
+    font-size: 50px;
+}
+
+.carousel-control{
+    
+}

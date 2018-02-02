@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <form class="formwidth" (ngSubmit)="onSubmit()" #myForm="ngForm">
+      <div class="col-md-4">
+        <div class="table-responsive">
+          <table class="table">
+            <tbody>
+              <tr>
+                <p>
+                  <mat-input-container class="fullwidth">
+                    <input type="text" matInput placeholder="Nombre" id="Nombre" name="Nombre">
+                  </mat-input-container>
+                </p>
+              </tr>
+              <tr>
+                <p>
+                  <mat-input-container class="fullwidth">
+                    <input type="text" matInput placeholder="Nombre" id="Nombre" name="Nombre">
+                  </mat-input-container>
+                </p>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+      </div>
+      <div class="col-md-offset-3 col-md-5">
+        <p>
+          <mat-input-container class="fullwidth">
+            <textarea matInput placeholder="direccion" name="direccion" id="direccion" cols="100%" rows="7"></textarea>
+          </mat-input-container>
+        </p>
+        <p>
+          <button type="submit" mat-raised-button color="warn" id="button-sugerencias">Enviar</button>
+        </p>
+      </div>
+    </form>
+  </div>
+</div>
+
+

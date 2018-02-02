@@ -1,0 +1,23 @@
+
+
+/* .thumbnail{
+    height: 300px;
+    width: 400px;
+} */
+ #cards{
+     padding-bottom: 30px;
+     padding-top: 30px;
+ }
+img{
+    padding-top: 10%;
+}
+ mat-card{
+     background: #3f548e;
+ }
+
+mat-card-title{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: dosis;
+    color: white;
+}

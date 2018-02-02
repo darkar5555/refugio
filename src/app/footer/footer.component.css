@@ -1,0 +1,62 @@
+.formwidth{
+    width: auto;
+}
+
+.fullwidth{
+    width: 100%;
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }
+
+.container-fluid    {
+    background: #222;
+    
+}
+
+input{
+    /* color: white; */
+    font-family: dosis;
+}
+
+agm-map {
+    height: 300px;
+
+}
+
+
+#mapa{
+    padding: 5px;
+    background: #222;
+}
+p{
+    color: #fde4f3;
+    font-family: dosis;
+    font-size: 12px;
+    padding-top: 3%;
+    padding-left: 8%;
+}
+
+h3{
+    color: #fde4f3;
+    font-family: dosis;
+}
+.contactanos{
+    padding-left: 30%;
+}
+
+.powered{
+    color: #ffffff;
+    display: block;
+    font-family: calibri;
+    font-size: 24px;
+    padding: 0px;
+    text-align: center;
+
+}

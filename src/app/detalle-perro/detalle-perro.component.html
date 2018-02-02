@@ -1,0 +1,69 @@
+<div class="container">
+  <a routerLink='/adopta'>
+    <button mat-raised-button color="primary" id="button">
+      <mat-icon>arrow_back</mat-icon> Regresar </button>
+  </a>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <!-- <mat-card>
+        <mat-card-header>
+          <mat-card-title>
+            <h4>{{perro.nombre}}</h4>
+          </mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="{{perro.url}}" alt="{{perro.nombre}}">
+       </mat-card> -->
+       <carousel>
+          <slide *ngFor="let image of carousel">
+            <img src={{image.url}} class="img-responsive"  alt="First slide" >
+            <div class="carousel-caption">
+                <h3>{{image.nombre}}</h3>
+                <p>{{image.tamano}}</p>
+            </div>
+          </slide>
+         </carousel>
+    </div>
+    <div class="col-md-6">
+      <mat-card>
+        <mat-card-header class="header-detalle-perro"> {{perro.nombre}} </mat-card-header>
+        <hr/>
+        <mat-card-content>
+          <div class="table-responsive">
+            <div class="table">
+              <tbody>
+                <tr>
+                  <td>Su edad es: </td>
+                  <td>{{perro.edad}}</td>
+                </tr>
+                <tr>
+                    <td>El color de pelo es: </td>
+                    <td>{{perro.color_pelo}}</td>
+                  </tr>
+                  <tr>
+                      <td>Su tamaño es: </td>
+                      <td>{{perro.tamano}}</td>
+                    </tr>
+                    <tr>
+                        <td>El sexo es:</td>
+                        <td>{{perro.sexo}}</td>
+                      </tr>
+                      <tr>
+                          <td>Espacio requerido que necesita: </td>
+                          <td>{{perro.espacio_requerido}}</td>
+                        </tr>
+                        <tr>
+                            <td>Su nivel de actividad es: </td>
+                            <td>{{perro.nivel_actividad}}</td>
+                          </tr>
+                
+
+              </tbody>
+            </div>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

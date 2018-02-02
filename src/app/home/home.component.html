@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <carousel >
+        <slide *ngFor="let image of perros" class="mySlides fade">
+          <img src={{image.url}} class="img-responsive" alt="First slide" style="display: block">
+          <div class="carousel-caption">
+            <h3>{{image.nombre}}</h3>
+            <p>{{image.tamano}}</p>
+          </div>
+        </slide>
+      </carousel>
+    </div>
+    <div class="col-md-4">
+      <carousel class="carousel">
+        <slide *ngFor="let image of perros">
+          <img src={{image.url}} class="img-responsive" alt="First slide" style="display: block">
+          <div class="carousel-caption">
+            <h3>{{image.nombre}}</h3>
+            <p>{{image.tamano}}</p>
+          </div>
+        </slide>
+      </carousel>
+    </div>
+    <div class="col-md-4">
+      <carousel class="carousel">
+        <slide *ngFor="let image of perros">
+          <img src={{image.url}} class="img-responsive" alt="First slide" style="display: block">
+          <div class="carousel-caption">
+            <h3>{{image.nombre}}</h3>
+            <p>{{image.tamano}}</p>
+          </div>
+        </slide>
+      </carousel>
+    </div>
+  </div>
+</div>

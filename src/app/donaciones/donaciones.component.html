@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-1 col-md-6">
+      <mat-card>
+        <mat-card-header>
+          <h4>Apoyanos a dar lo mejor para estos angelitos</h4>
+        </mat-card-header>
+        <mat-card-content>
+          Para poder ayudar a mas perritos y brindarles mas comodidades, asi como poder lorem Lorem Ipsum es simplemente el texto de
+          relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias
+          desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería
+          de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años,
+          sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original.
+          Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum,
+          y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de
+          Lorem Ipsum.
+          <br> Puedes ayudarnos llenando el siguiente formulario.
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-md-5">
+      <mat-card>
+        <form class="formwidth" (ngSubmit)="onSubmit()" #myForm="ngForm">
+          <div class="table-responsive">
+            <table class="table" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td>
+                    <p>
+                      <mat-input-container class="fullwidth">
+                        <input type="text" matInput placeholder="Nombre" id="nombre" name="nombre">
+                      </mat-input-container>
+                    </p>
+                  </td>
+                  <td>
+                    <p>
+                      <mat-input-container class="fullwidth">
+                        <input type="text" matInput placeholder="apellido" id="apellido" name="apellido">
+                      </mat-input-container>
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p>
+            <mat-input-container class="fullwidth" color="warn">
+              <textarea matInput placeholder="direccion" name="direccion" id="direccion"></textarea>
+            </mat-input-container>
+          </p>
+          <p>
+            <button type="submit" mat-raised-button color="primary" >Enviar</button>
+          </p>
+        </form>
+      </mat-card>
+    </div>
+  </div>
+</div>

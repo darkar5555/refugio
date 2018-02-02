@@ -1,0 +1,27 @@
+.example-spacer{
+    flex: auto;
+}
+
+
+img.mat-card-image{
+    max-width: 500px;
+    max-height: 800px;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .mat-card-image{
+    margin-left: auto;
+    margin-right: auto;
+} */
+    
+.mat-card{
+    font-family: dosis;
+
+}
+
+h4{
+    color: #3f548e;
+    text-transform: uppercase;
+}

@@ -1,0 +1,65 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="contactanos">
+      <h3>Contactanos</h3>
+      <p>
+        <mat-icon>stay_primary_portrait</mat-icon>
+        9674536856
+      </p>
+      <p>
+        <mat-icon>call</mat-icon>
+        054-322865
+      </p>
+      <p>
+        <mat-icon>room</mat-icon>
+        Av. cayma Socabaya Arequipa
+      </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <!-- <form class="formwidth" (ngSubmit)="onSubmit()" #myForm="ngForm">
+        <div class="table-responsive">
+          <table class="table" cellspacing="0">
+            <tbody>
+              <tr>
+
+                <p>
+                  <mat-input-container class="fullwidth">
+                    <input type="text" matInput placeholder="Nombre" id="nombre" name="nombre">
+                  </mat-input-container>
+                </p>
+
+              </tr>
+              <tr>
+                <p>
+                  <mat-input-container class="fullwidth">
+                    <input type="text" matInput placeholder="apellido" id="apellido" name="apellido">
+                  </mat-input-container>
+                </p>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          <mat-input-container class="fullwidth" color="warn">
+            <textarea matInput placeholder="direccion" name="direccion" id="direccion"></textarea>
+          </mat-input-container>
+        </p>
+      </form> -->
+      
+    </div>
+    <div class="col-md-4">
+      <mat-card id="mapa">
+        <agm-map [latitude]="lat" [longitude]="lng">
+          <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        </agm-map>
+      </mat-card>
+    </div>
+  </div>
+  <div class="row">
+    <p class="powered">
+      Refugio para Perros &#169; 2017 | <a href="http://amica.pe/" target="_blank">Powered by Amica</a>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,73 @@
+<!-- <div class="container-fluid">
+  <h1>Perros para Adoptar</h1>
+</div>
+<div class="container">
+    <ul class="list-group">
+        <li *ngFor="let image of perros" class="list-group-item">
+          <img src="{{image.url}}" class="tn" width="200" height="160">
+        </li>
+    </ul>  
+</div> -->
+<!-- <div *ngFor="let image of perros" class="card" style="width: 20rem;">
+    <img class="card-img-top" src="{{image.url}}" class="tn" width="500" height="500" alt="Card image cap">
+    <div class="card-body">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+</div>
+<div *ngFor="let image of perros" class="card bg-dark text-white">
+    <img class="img-rounded" src="{{image.url}}" alt="Card image">
+    <div class="card-img-overlay">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text">Last updated 3 mins ago</p>
+    </div>
+  </div> -->
+
+  <!-- <div *ngFor="let image of perros" class="container">
+      <h2>Thumbnail</h2>
+      <p>The .img-thumbnail class creates a thumbnail of the image:</p>            
+      <img src="{{image.url}}" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> 
+    </div>
+    <div *ngFor="let image of perros" class="container">
+        <h2>Rounded Corners</h2>
+        <p>The .img-rounded class adds rounded corners to an image (not available in IE8):</p>            
+        <img src="{{image.url}}" class="img-rounded" alt="Cinque Terre" width="304" height="236"> 
+      </div>
+
+      <div *ngFor="let image of perros" class="container">
+          <h2>Image</h2>
+          <p>The .img-responsive class makes the image scale nicely to the parent element (resize the browser window to see the effect):</p>
+          <img class="img-responsive"  src={{image.url}} alt="Chania" width="460" height="345"> 
+        </div> -->
+      
+
+<!--         <div class="container">
+            <div class="row">
+              <div *ngFor="let image of perros"   class="col-md-4">
+                <div  class="thumbnail">
+                  <a href="/w3images/lights.jpg" target="_blank">
+                    <img class="img-responsive"  src={{image.url}}  alt="Lights" style="width:100%">
+                    <div class="caption">
+                      <p>Su nombre es {{image.nombre}}</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div> -->
+<div class="container">
+  <div class="row">
+    <div *ngFor="let image of perros" class="col-md-4" id="cards">
+      <mat-card>
+        <mat-card-title>{{image.nombre}}</mat-card-title>
+        <mat-card-footer>
+          <mat-card-title>{{image.sexo}} | {{image.tamano}}</mat-card-title>
+        </mat-card-footer>
+        <a routerLink="/detalle-perro/{{image.id}}">
+          <img mat-card-image src="{{image.url}}" alt="{{image.nombre}}">
+        </a>
+      </mat-card>
+    </div>
+  </div>
+</div>

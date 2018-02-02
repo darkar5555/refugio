@@ -1,0 +1,17 @@
+.navbar{
+    padding-bottom: 0px;
+    opacity: 50%;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+}
+.container-fluid{
+    padding-bottom: 0px;
+}
+
+/* .navbar navbar-default{
+    opacity: 50%;
+    border-radius: 0px;
+} */
+
+
